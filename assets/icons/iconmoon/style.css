@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?fz0vk9');
+  src:  url('fonts/icomoon.eot?fz0vk9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fz0vk9') format('truetype'),
+    url('fonts/icomoon.woff?fz0vk9') format('woff'),
+    url('fonts/icomoon.svg?fz0vk9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+.icon-star-empty:before {
+  content: "\e9d7";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-info:before {
+  content: "\ea0c";
+}
+.icon-trello:before {
+  content: "\eab3";
+}
+.icon-bell-o:before {
+  content: "\f0a2";
+}
+.icon-ellipsis-h:before {
+  content: "\f141";
+}
+.icon-lock:before {
+  content: "\e900";
+}
