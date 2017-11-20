@@ -4,45 +4,39 @@
     box-sizing:border-box;
 }
 body{
-       background:#80b4d3;
-        font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
+    background:#80b4d3;
+    font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
 }
 #menu-nav{
     width:100%;
-height:auto;
- font-size:14px;
-
+    height:auto;
+    font-size:14px;
 }
 .div-menu-nav{
- 
     background: #026AA7;
     padding: 2px 8px;
     overflow:hidden;
-      height:40px;
-      position:relative;
-     
+    height:40px;
+    position:relative;    
 }
 
 .div-menu-nav>ul{
     display: inline-block;
-        padding-top:3px;
+    padding-top:3px;
 }
 
 .div-menu-nav>ul>a{
-    //color:white;
     color:#f3f3f3;
     text-decoration:none;
-     background-color:#4e97c2;
+    background-color:#4e97c2;
     padding:7px;
     line-heigth:6px;
     border-radius:5px;
     font-weight:bold;
-  
-
 }
+
 .div-menu-nav ul:last-child{
     float:right;
-    //padding-top:10px;
 }
 
 .nav-tableros:before {
@@ -53,9 +47,9 @@ height:auto;
   font-weight: normal;
 }
 
- .div-menu-nav .nav-icono-trello{
-     font-family: 'Pacifico', cursive;
-     font-size:23px;
+.div-menu-nav .nav-icono-trello{
+    font-family: 'Pacifico', cursive;
+    font-size:23px;
     color:#80b4d3;
     font-weight:normal;
     background:#026aa7;
@@ -63,28 +57,28 @@ height:auto;
  }
 
 .nav-icono-trello:before{
- content: "\eab3";
-   font-family: 'icomoon';
-  font-size:20px;
-  color:#80b4d3;
+    content: "\eab3";
+    font-family: 'icomoon';
+    font-size:20px;
+    color:#80b4d3;
 }
 
 .nav-add:before{
     content: "\ea0a";
     font-family: 'icomoon';
-  font-size:15px;
+    font-size:15px;
 }
 
 .nav-info:before{
     content: "\ea0c";
     font-family: 'icomoon';
-  font-size:15px;
+    font-size:15px;
 }
 
 .nav-ring:before{
     content: "\f0a2";
     font-family: 'icomoon';
-  font-size:15px;
+    font-size:15px;
 }
 #menu-nav .nav-user{
     width:32px;
@@ -122,18 +116,18 @@ height:auto;
 .div-menu-board a{
     text-decoration:none;
     color:#fff;
-    //font-size:14px;
 }
+
 .icon-star::before{
      content: "\e9d7";
-      font-family: 'icomoon';
-     
+      font-family: 'icomoon';    
 }
 
 .private::before{
     content: "\e900";
     font-family: 'icomoon';
 }
+
 .show-menu::before{
     content: "\f141";
     font-family: 'icomoon';
@@ -152,25 +146,221 @@ height:auto;
 
 .div-menu-board{
     margin-top:10px;
-    outline:1px solid black;
 }
+
 .welcome-board{
     font-size:20px;
     font-weight:bold;
 }
 
-/**************input de main*******/
-main{
-    padding: 30px 10px;
+/**************SECCIÓN MAIN*******/
+#main{
+   padding: 30px 10px;
 }
-#input-main{
-    width:300px;
-    background:#18bc9c;
+
+#box-main{
+    width:100%;
+    height:auto;
+}
+
+#input-main{ 
+    width:280px;
+    background:#026aa7;
     line-height:30px;
     border:none;
     border-radius:3px;
     padding:5px;
+    cursor:pointer;
+    vertical-align:top;
+    margin-left:5px;
 }
+
+#input-main:hover{
+    background:hsl(202,100%,25%);
+}
+
+
 :-ms-input-placeholder { color: #c7e5cf;}
 ::-webkit-input-placeholder { color: #c7e5cf;} 
 ::-moz-placeholder { color: #c7e5cf;}
+
+/*******formulario*****/
+.form1-style{
+   width:280px;
+   height:100px;
+   border:none;
+   border-radius:5px;
+   background:#e2e4e6;
+   display:inline-block;
+   vertical-align:top;
+   margin-left:5px;
+}
+.oculto{
+  display:none;
+}
+
+/***********el input del form1*******/
+.form1-input{
+    line-height:30px;
+    width:260px;
+    border:none;
+    border-radius:5px;
+    margin-top:10px;
+    margin-left:10px;
+    padding:3px;   
+}
+
+.form1-button{
+    border:none;
+    background:#5aac44;
+    color:#fff;
+    font-weight:bold;
+    width:70px;
+    height:40px;
+    border-radius:5px;
+    margin-left:10px;
+    margin-top:5px;
+    cursor:pointer;
+}
+
+.span-form1{
+    font-size:20px;
+    font-weight:bold;
+    margin-left:10px;
+    padding-top:10px;
+    color:#999999;
+    cursor:pointer;
+}
+
+/*********agregado en js***/
+
+.boxListStyle{
+    width:280px;
+    height:80px;
+    display:inline-block;
+    background:white;
+    background:#e2e4e6;
+    border-radius:5px;
+    color:#b1b9c6;
+    margin-left:5px;
+    vertical-align:top;
+}
+
+.boxListHeaderStyle{
+    height:40px;
+    color:black;
+    font-weight: bold;
+    padding-top:10px;
+    padding-left:3px;
+}
+
+.boxListContentStyle{
+    height:40px;
+    cursor:pointer;
+}
+
+.boxListContentStyle:hover{
+     background:hsl(0,0%,60%);
+}
+
+.textAreaListStyle{
+    width:260px;
+    height:20px;
+    font-size:13px;
+}
+
+.newDivStyle{
+    line-height:30px;
+    width:280px;
+    height:40px;
+    padding:3px;
+    display:inline-block;
+    color:#026aa7;
+    background:#c6e7fb;
+}
+
+.newDivStyle:hover{
+    background:#18bc9c;
+}
+
+.buttonListStyle{
+    border:none;
+    background:#5aac44;
+    color:#fff;
+    font-weight:bold;
+    width:70px;
+    height:40px;
+    border-radius:5px;
+    margin-left:10px;
+    margin-top:5px;
+    cursor:pointer;
+}
+
+.newStyleP{
+    height:auto;
+}
+
+.divListStyle{
+  width:280px;
+  height:150px;
+  background-color:white;
+  display:inline-block;
+}
+
+.textAreaStyle{
+    width:260px;
+    height:90px;
+    margin-top:5px;
+    margin-left:10px;
+}
+
+.buttonDivListStyle{
+    border:none;
+    background:#5aac44;
+    color:#fff;
+    font-weight:bold;
+    width:70px;
+    height:40px;
+    border-radius:5px;
+    margin-left:10px;
+    margin-top:5px;
+    cursor:pointer;
+}
+
+.spanDivListStyle{
+    font-size:20px;
+    font-weight:bold;
+    margin-left:10px;
+    color:#999999;
+    cursor:pointer; 
+}
+
+/* Estas se usaron en versiones anteriores
+.alCostado{
+  position:absolute;
+  left:100%;
+}
+.press{
+    width:50px;
+    height:20px;
+    background:red;
+}
+.ancorStyle{
+    text-decoration:none;
+    display:inline-block;
+    margin-top:15px;
+    margin-left:3px;
+ 
+}
+.ancorStyle:hover{
+    text-decoration:underline;
+    color:#fff;
+    //cursor:pointer;
+}
+.noShowAncor{
+    display:none;
+}
+.noShowDivList{
+    display:none;
+}
+*/

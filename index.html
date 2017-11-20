@@ -10,31 +10,40 @@
     <link rel="stylesheet" href="css/main.css ">
 </head>
 <body>
-    <nav id="menu-nav">
-        <div class="div-menu-nav">
-            <ul>
-                <a href="#" class="nav-tableros">Tableros</a>
-                <input type="text" class="nav-input">
-                <a href="#" class="nav-icono-trello">Trello</a>
-            </ul>
-            <ul>
-                <a href="#" class="nav-add"></a>
-                <a href="#" class="nav-info"></a>
-                <a href="#" class="nav-ring"></a>
-                <a href="#" class="nav-user">G</a>
-            </ul>
-        </div>
-        <div class="div-menu-board">
-            <a href="#" class="welcome-board">Tablero de bienvenida</a>
-            <a href="#" class="icon-star"></a>
-            <a href="#" class="private">Privado</a>
-            <a href="#" class="show-menu">Mostrar menú</a>
-        </div>
+  <nav id="menu-nav">
+    <div class="div-menu-nav">
+      <ul>
+        <a href="#" class="nav-tableros">Tableros</a>
+        <input type="text" class="nav-input">
+        <a href="#" class="nav-icono-trello">Trello</a>
+      </ul>
+      <ul>
+        <a href="#" class="nav-add"></a>
+        <a href="#" class="nav-info"></a>
+        <a href="#" class="nav-ring"></a>
+        <a href="#" class="nav-user">G</a>
+      </ul>
+    </div>
+    <div class="div-menu-board">
+      <a href="#" class="welcome-board">Tablero de bienvenida</a>
+      <a href="#" class="icon-star"></a>
+      <a href="#" class="private">Privado</a>
+      <a href="#" class="show-menu">Mostrar menú</a>
+    </div>
     </nav>
-<main>
-    <input type="text" placeholder="Añadir un lista..." id="input-main">
-</main>
+<!--En la sección main va a ir solo 2 elementos, el resto será creado dinámicamente en js-->
+  <main id="main">
+    <div id="box-main">
+      <input type="text" placeholder="Añadir un lista..." id="input-main" class="input-main"> 
+      <form  id="form1" class="form1-style oculto">            
+        <input type="text" placeholder="Añade una lista ..." id="form1-input" class="form1-input">
+        <button id="form1-button" class="form1-button">Guardar</button>
+        <span class="span-form1">X</span> 
+      </form>
+    </div>
+  </main>
 
-    <script src="js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
+
