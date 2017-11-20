@@ -6,7 +6,7 @@ En este reto, se replicará la funcionalidad de los tableros de Trello, para lo 
 
 A continuación una imágen de como debería quedar:
 
-![Imagen a replicar](assets/imgs/trello.png)
+![Imagen a replicar](assets/imgs/trello-demo.png)
 
 ### Consideraciones
 
